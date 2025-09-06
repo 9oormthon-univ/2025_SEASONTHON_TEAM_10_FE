@@ -56,6 +56,7 @@ const SearchBox = ({ searchTitle }: Props) => {
     Keyboard.dismiss();
     setIsSearchBarOn(false);
   };
+  console.log(1);
 
   return (
     <TouchableWithoutFeedback onPress={handleOutsidePress}>
