@@ -5,12 +5,11 @@ import FeedView from '@/assets/img/feed-view.svg';
 import ImageView from '@/assets/img/image-view.svg';
 import PlusIcon from '@/assets/img/plus.svg';
 import MyRecipeCatagoryBottomSheet from './MyRecipeCatagoryBottomSheet';
-import { useBottomSheetModal } from '@/shared/ui/useBottomSheetModal';
-
-type ViewType = 'article' | 'feed' | 'image';
+import { useBottomSheetModal } from '@/src/shared/ui/modal/bottomSheet/useBottomSheetModal';
+import { useViewTypeStore } from '@/src/shared/store/useViewTypeStore';
 
 const MyRecipeCatagory = () => {
-  const [viewType, setViewType] = useState<ViewType>('article');
+  const { viewType, setViewType } = useViewTypeStore();
   const [catagory] = useState(['점심', '저녁']);
 
   // Modal state
