@@ -14,15 +14,39 @@
 # 의존성 설치
 yarn install
 
-# 개발 서버 시작
+# 개발 서버 실행
 yarn start
 
-# iOS 시뮬레이터에서 실행
+# iOS 시뮬레이터 실행
 yarn ios
 
-# Android 에뮬레이터에서 실행
+# iOS 개발 환경 초기화 (pod install 포함)
+yarn ios:dev
+
+# Android 에뮬레이터 실행
 yarn android
 
-# 웹에서 실행
+# 웹 실행
 yarn web
+
+# ESLint 검사
+yarn lint
+
+# ESLint 자동 수정
+yarn lint:fix
+
+# Prettier 포맷팅 적용
+yarn format
+
+# 포맷팅 검사 
+yarn format:check
+
+# TypeScript 타입 검사
+yarn type-check
+
+# FSD 규칙 정적 검사
+yarn fsd
+
+# FSD 감시 모드 (변경 시 자동 검사)
+yarn fsd:watch
 ```
